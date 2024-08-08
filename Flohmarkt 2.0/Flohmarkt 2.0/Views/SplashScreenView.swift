@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SplashScreenView: View {
+    @EnvironmentObject var uViewModel: UserViewModel
+    @EnvironmentObject var aViewModel: ArticleViewModel
     @State private var isActive = false
     @State private var scale: CGFloat = 0.25
     @State private var breatheIn = true
@@ -15,12 +17,14 @@ struct SplashScreenView: View {
     
     var body: some View {
         if isActive {
-            LogInView() // Nach der Animation wird zur LogInView navigiert
+            LogInView()
+                .environmentObject(uViewModel)
+                .environmentObject(aViewModel)
         } else {
             VStack {
                 Spacer()
                 
-                // Animierter Text "Flohmarktapp 2.0"
+                
                 ZStack {
                     Text("Flohmarktapp 2.0")
                         .font(.largeTitle)

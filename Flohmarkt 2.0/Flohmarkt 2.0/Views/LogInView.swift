@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct LogInView: View {
-    @EnvironmentObject var viewModel: UserViewModel
+    @EnvironmentObject var uViewModel: UserViewModel
+    @EnvironmentObject var aViewModel: ArticleViewModel
     @State private var userName: String = ""
     @State private var password: String = ""
     @State private var isLoggedIn: Bool = false
@@ -17,8 +18,10 @@ struct LogInView: View {
         NavigationStack {
             VStack {
                 Text("Willkommen")
-                    .font(.largeTitle)
-                    .padding()
+                    .font(.system(size: 32, weight: .bold))
+                    .foregroundColor(Color.purple.opacity(0.78))
+                    .padding(.top, 56)
+                    .padding(.horizontal, 16)
                 
                 Section {
                     TextField("User Name", text: $userName)
@@ -30,17 +33,17 @@ struct LogInView: View {
                 }
                 
                 Button("LogIn") {
-                    if viewModel.logIn(userName: userName, password: password) {
+                    if uViewModel.logIn(userName: userName, password: password) {
                         isLoggedIn = true
                     }
                 }
                 .padding()
-                NavigationLink(destination: MainMenue().environmentObject(viewModel), isActive: $isLoggedIn) {
+                NavigationLink(destination: MainMenue().environmentObject(uViewModel), isActive: $isLoggedIn) {
                     EmptyView()
                 }
                 
                 
-                NavigationLink(destination: SignUpView().environmentObject(viewModel)) {
+                NavigationLink(destination: SignUpView().environmentObject(uViewModel)) {
                     Text("SignUp")
                 }
             }
@@ -49,5 +52,7 @@ struct LogInView: View {
 }
 
 #Preview {
-    LogInView().environmentObject(UserViewModel())
+    LogInView()
+        .environmentObject(UserViewModel())
+        .environmentObject(ArticleViewModel())
 }

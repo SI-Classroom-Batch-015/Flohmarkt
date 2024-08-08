@@ -17,13 +17,13 @@ struct CategoriesBuy: View {
                 Text("Willkommen!")
                     .font(.largeTitle)
                     .padding()
-                Text("In welcher Kategorie möchtest Du verkaufen?")
+                Text("In welcher Kategorie möchtest Du kaufen?")
                     .padding()
                 
                 ScrollView(.horizontal) {
                     HStack(spacing: 20) {
                         ForEach(aViewModel.categories) { cat in
-                            NavigationLink(destination: AddArticleCard(category: cat)) {
+                            NavigationLink(destination: ArticleList(category: cat)) {
                                 VStack {
                                     Image(cat.logo)
                                         .resizable()
