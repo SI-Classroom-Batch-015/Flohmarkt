@@ -7,15 +7,15 @@
 
 import Foundation
 
-enum enumCategory: String, CaseIterable {
+enum EnumCategory: String, CaseIterable {
     case elektronik = "Elektronik"
     case haushalt = "Haushalt"
     case spielzeug = "Spielzeug"
     
-    func loadImages() -> [String] {
+    func loadImages(for category: Category) -> [String] {
         switch self {
         case .elektronik:
-            return []
+            return ["PS 5"]
         case .haushalt:
             return []
         case .spielzeug:

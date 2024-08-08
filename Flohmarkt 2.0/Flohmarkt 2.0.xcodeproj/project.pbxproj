@@ -13,10 +13,16 @@
 		1F8F54AE2C60FF4900A310BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8F54AD2C60FF4900A310BF /* Preview Assets.xcassets */; };
 		1F8F54B82C61EEE000A310BF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F54B72C61EEE000A310BF /* User.swift */; };
 		1F8F54BB2C61EEFF00A310BF /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F54BA2C61EEFF00A310BF /* Article.swift */; };
-		1F8F54BD2C61EF1000A310BF /* enumCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F54BC2C61EF1000A310BF /* enumCategory.swift */; };
+		1F8F54BD2C61EF1000A310BF /* EnumCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F54BC2C61EF1000A310BF /* EnumCategory.swift */; };
 		1F8F54BF2C62125D00A310BF /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F54BE2C62125D00A310BF /* UserViewModel.swift */; };
 		1F8F54C12C62127600A310BF /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F54C02C62127600A310BF /* ArticleViewModel.swift */; };
 		1F8F54C32C62150A00A310BF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F54C22C62150A00A310BF /* Category.swift */; };
+		1F8F54C52C623C4900A310BF /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F54C42C623C4900A310BF /* LogInView.swift */; };
+		1F8F54C72C623C5D00A310BF /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F54C62C623C5D00A310BF /* SignUpView.swift */; };
+		1F8F54C92C624CF200A310BF /* MainMenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F54C82C624CF100A310BF /* MainMenue.swift */; };
+		1F8F54CB2C634D7A00A310BF /* CategoriesSell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F54CA2C634D7A00A310BF /* CategoriesSell.swift */; };
+		1F8F54CE2C634F1400A310BF /* CategoriesBuy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F54CD2C634F1400A310BF /* CategoriesBuy.swift */; };
+		1F8F54D02C635C6000A310BF /* AddArticleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F54CF2C635C6000A310BF /* AddArticleCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,10 +33,16 @@
 		1F8F54AD2C60FF4900A310BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1F8F54B72C61EEE000A310BF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1F8F54BA2C61EEFF00A310BF /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
-		1F8F54BC2C61EF1000A310BF /* enumCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enumCategory.swift; sourceTree = "<group>"; };
+		1F8F54BC2C61EF1000A310BF /* EnumCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumCategory.swift; sourceTree = "<group>"; };
 		1F8F54BE2C62125D00A310BF /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		1F8F54C02C62127600A310BF /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		1F8F54C22C62150A00A310BF /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		1F8F54C42C623C4900A310BF /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		1F8F54C62C623C5D00A310BF /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		1F8F54C82C624CF100A310BF /* MainMenue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenue.swift; sourceTree = "<group>"; };
+		1F8F54CA2C634D7A00A310BF /* CategoriesSell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesSell.swift; sourceTree = "<group>"; };
+		1F8F54CD2C634F1400A310BF /* CategoriesBuy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesBuy.swift; sourceTree = "<group>"; };
+		1F8F54CF2C635C6000A310BF /* AddArticleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArticleCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,7 @@
 		1F8F54A52C60FF4800A310BF /* Flohmarkt 2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				1F8F54CC2C634DA400A310BF /* Repositiries */,
 				1F8F54B62C61EEC100A310BF /* Views */,
 				1F8F54B52C61EEAB00A310BF /* ViewModel */,
 				1F8F54B42C61EE9E00A310BF /* Models */,
@@ -87,7 +100,7 @@
 			children = (
 				1F8F54B72C61EEE000A310BF /* User.swift */,
 				1F8F54BA2C61EEFF00A310BF /* Article.swift */,
-				1F8F54BC2C61EF1000A310BF /* enumCategory.swift */,
+				1F8F54BC2C61EF1000A310BF /* EnumCategory.swift */,
 				1F8F54C22C62150A00A310BF /* Category.swift */,
 			);
 			path = Models;
@@ -105,8 +118,21 @@
 		1F8F54B62C61EEC100A310BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1F8F54C42C623C4900A310BF /* LogInView.swift */,
+				1F8F54C62C623C5D00A310BF /* SignUpView.swift */,
+				1F8F54C82C624CF100A310BF /* MainMenue.swift */,
+				1F8F54CA2C634D7A00A310BF /* CategoriesSell.swift */,
+				1F8F54CD2C634F1400A310BF /* CategoriesBuy.swift */,
+				1F8F54CF2C635C6000A310BF /* AddArticleCard.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1F8F54CC2C634DA400A310BF /* Repositiries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositiries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,12 +207,18 @@
 			files = (
 				1F8F54BB2C61EEFF00A310BF /* Article.swift in Sources */,
 				1F8F54BF2C62125D00A310BF /* UserViewModel.swift in Sources */,
-				1F8F54BD2C61EF1000A310BF /* enumCategory.swift in Sources */,
+				1F8F54BD2C61EF1000A310BF /* EnumCategory.swift in Sources */,
 				1F8F54A92C60FF4800A310BF /* ContentView.swift in Sources */,
+				1F8F54CE2C634F1400A310BF /* CategoriesBuy.swift in Sources */,
 				1F8F54A72C60FF4800A310BF /* Flohmarkt_2_0App.swift in Sources */,
+				1F8F54D02C635C6000A310BF /* AddArticleCard.swift in Sources */,
 				1F8F54C12C62127600A310BF /* ArticleViewModel.swift in Sources */,
+				1F8F54C72C623C5D00A310BF /* SignUpView.swift in Sources */,
+				1F8F54C52C623C4900A310BF /* LogInView.swift in Sources */,
 				1F8F54B82C61EEE000A310BF /* User.swift in Sources */,
+				1F8F54CB2C634D7A00A310BF /* CategoriesSell.swift in Sources */,
 				1F8F54C32C62150A00A310BF /* Category.swift in Sources */,
+				1F8F54C92C624CF200A310BF /* MainMenue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

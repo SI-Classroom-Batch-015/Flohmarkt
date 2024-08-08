@@ -11,8 +11,8 @@ struct User: Identifiable, Hashable {
     let id = UUID()
     let userName: String
     let password: String
-    let balance: Double
-    let articles2Sell: [Article]
+    var balance: Double
+    var articles2Sell: [Article]
     
     init(userName: String, password: String, balance: Double, articles2Sell: [Article] = []) {
         self.userName = userName

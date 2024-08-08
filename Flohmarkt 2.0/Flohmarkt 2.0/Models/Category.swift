@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct Category {
-    var eList: [Article] = []
-    var hList: [Article] = []
-    var sList: [Article] = []
+struct Category: Identifiable, Hashable {
+    let id = UUID()
+    let name: String
+    let logo: String
+    var articleList: [Article]
 }

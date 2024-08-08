@@ -9,16 +9,16 @@ import Foundation
 
 class UserViewModel: ObservableObject {
     @Published var userList: [User] = []
-    @Published var currentuser: User? = nil
+    @Published var currentUser: User? = nil
     
     init() {
         userList.append(MockUser.xUser)
     }
     
-    func LogIn(userName: String, password: String) -> Bool {
+    func logIn(userName: String, password: String) -> Bool {
         if let user = userList.first(where: { $0.userName == userName}) {
             if user.verifyPassword(password) {
-                currentuser = user
+                currentUser = user
                 return true
             }
         }
@@ -26,7 +26,7 @@ class UserViewModel: ObservableObject {
     }
     
     func logOut() {
-        currentuser = nil
+        currentUser = nil
     }
     
     func signUp(userName: String, password: String, balance: Double) -> Bool {
@@ -36,6 +36,7 @@ class UserViewModel: ObservableObject {
         let newUser = User(userName: userName, password: password, balance: balance)
         
         userList.append(newUser)
+        currentUser = newUser
         return true
     }
 }
