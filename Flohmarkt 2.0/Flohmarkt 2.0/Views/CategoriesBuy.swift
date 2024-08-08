@@ -41,5 +41,5 @@ struct CategoriesBuy: View {
 }
 
 #Preview {
-    CategoriesBuy()
+    CategoriesBuy().environmentObject(ArticleViewModel())
 }

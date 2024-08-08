@@ -42,4 +42,5 @@ struct CategoriesSell: View {
 
 #Preview {
     CategoriesSell().environmentObject(ArticleViewModel())
+        .environmentObject(UserViewModel())
 }

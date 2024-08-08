@@ -11,7 +11,7 @@ struct ContentView: View {
     @StateObject var uViewModel = UserViewModel()
     @StateObject var aViewModel = ArticleViewModel()
     var body: some View {
-        LogInView()
+        SplashScreenView()
             .environmentObject(uViewModel)
             .environmentObject(aViewModel)
     }

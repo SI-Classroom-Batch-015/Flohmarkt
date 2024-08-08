@@ -23,6 +23,7 @@
 		1F8F54CB2C634D7A00A310BF /* CategoriesSell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F54CA2C634D7A00A310BF /* CategoriesSell.swift */; };
 		1F8F54CE2C634F1400A310BF /* CategoriesBuy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F54CD2C634F1400A310BF /* CategoriesBuy.swift */; };
 		1F8F54D02C635C6000A310BF /* AddArticleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F54CF2C635C6000A310BF /* AddArticleCard.swift */; };
+		F0649F9A2C64B0EC0044B2BA /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0649F992C64B0EC0044B2BA /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		1F8F54CA2C634D7A00A310BF /* CategoriesSell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesSell.swift; sourceTree = "<group>"; };
 		1F8F54CD2C634F1400A310BF /* CategoriesBuy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesBuy.swift; sourceTree = "<group>"; };
 		1F8F54CF2C635C6000A310BF /* AddArticleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArticleCard.swift; sourceTree = "<group>"; };
+		F0649F992C64B0EC0044B2BA /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +77,6 @@
 		1F8F54A52C60FF4800A310BF /* Flohmarkt 2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				1F8F54CC2C634DA400A310BF /* Repositiries */,
 				1F8F54B62C61EEC100A310BF /* Views */,
 				1F8F54B52C61EEAB00A310BF /* ViewModel */,
 				1F8F54B42C61EE9E00A310BF /* Models */,
@@ -124,15 +125,9 @@
 				1F8F54CA2C634D7A00A310BF /* CategoriesSell.swift */,
 				1F8F54CD2C634F1400A310BF /* CategoriesBuy.swift */,
 				1F8F54CF2C635C6000A310BF /* AddArticleCard.swift */,
+				F0649F992C64B0EC0044B2BA /* SplashScreenView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		1F8F54CC2C634DA400A310BF /* Repositiries */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repositiries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +202,7 @@
 			files = (
 				1F8F54BB2C61EEFF00A310BF /* Article.swift in Sources */,
 				1F8F54BF2C62125D00A310BF /* UserViewModel.swift in Sources */,
+				F0649F9A2C64B0EC0044B2BA /* SplashScreenView.swift in Sources */,
 				1F8F54BD2C61EF1000A310BF /* EnumCategory.swift in Sources */,
 				1F8F54A92C60FF4800A310BF /* ContentView.swift in Sources */,
 				1F8F54CE2C634F1400A310BF /* CategoriesBuy.swift in Sources */,
