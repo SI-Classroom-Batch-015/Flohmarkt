@@ -29,6 +29,9 @@ struct MainMenue: View {
             NavigationLink("Kaufen",destination: CategoriesBuy())
                 .padding()
                 .buttonStyle(.bordered)
+            NavigationLink("LogOut",destination: LogInView())
+                .padding()
+                .buttonStyle(.bordered)
             
         }
         .navigationBarBackButtonHidden(true)

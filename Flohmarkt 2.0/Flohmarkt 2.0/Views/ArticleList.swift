@@ -23,6 +23,13 @@ struct ArticleList: View {
             Text(category.name)
                 .font(.title)
                 .padding()
+            
+            List {
+                ForEach(category.articleList) { article in
+                    ArticleItem(article: article)
+                }
+            }
+            .padding()
         }
     }
 }
