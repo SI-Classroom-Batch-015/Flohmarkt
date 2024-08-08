@@ -16,8 +16,10 @@ struct CategoriesBuy: View {
             VStack {
                 Text("Willkommen!")
                     .font(.largeTitle)
+                    .foregroundColor(.green)
                     .padding()
                 Text("In welcher Kategorie möchtest Du kaufen?")
+                    .foregroundColor(.green)
                     .padding()
                 
                 ScrollView(.horizontal) {
@@ -28,14 +30,22 @@ struct CategoriesBuy: View {
                                     Image(cat.logo)
                                         .resizable()
                                         .frame(width: 200, height: 100)
+                                        .background(Color.green.opacity(0.1))
+                                        .cornerRadius(10)
                                     Text(cat.name)
+                                        .foregroundColor(.green)
                                 }
+                                .padding()
+                                .background(Color.green.opacity(0.1))
+                                .cornerRadius(10)
                             }
                         }
                     }
                     .padding()
                 }
             }
+            .padding()
+            
         }
     }
 }

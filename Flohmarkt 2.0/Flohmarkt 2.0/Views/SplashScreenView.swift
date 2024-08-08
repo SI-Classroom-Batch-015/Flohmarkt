@@ -26,9 +26,9 @@ struct SplashScreenView: View {
                 
                 
                 ZStack {
-                    Text("Flohmarktapp 2.0")
+                    Text("we whish you a happy shopping")
                         .font(.largeTitle)
-                        .foregroundColor(.blue)
+                        .foregroundColor(.red)
                         .scaleEffect(scale)
                         .animation(.easeInOut(duration: 2.5).repeatForever(autoreverses: true), value: scale)
                         .onAppear() {
@@ -41,9 +41,9 @@ struct SplashScreenView: View {
                         }
                     
                     // Zusätzlicher Effekt, der "atmet"
-                    Text("Flohmarktapp 2.0")
+                    Text("we whish you a happy shopping")
                         .font(.largeTitle)
-                        .foregroundColor(.blue)
+                        .foregroundColor(.green)
                         .scaleEffect(breatheIn ? 0.9 : 1.1)
                         .animation(.easeInOut(duration: 2.5).repeatForever(autoreverses: true), value: breatheIn)
                         .onAppear() {

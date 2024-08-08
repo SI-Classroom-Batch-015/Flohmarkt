@@ -29,26 +29,37 @@ struct AddArticleCard: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 200, height: 100)
-                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                    .clipShape(Circle())
+                    .background(Color.green.opacity(0.1))
+                    .cornerRadius(100)
                 
                 Text(category.name)
                     .font(.title)
+                    .foregroundColor(.green)
                     .padding()
                 
                 Section("Artikel Daten") {
                     TextField("Name", text: $name)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding()
+                        .background(Color.green.opacity(0.1))
+                        .cornerRadius(10)
                     Toggle(isOn: $isNew) {
                         Text(isNew ? "Neu" : "Gebraucht")
                     }
                     .padding()
+                    .background(Color.green.opacity(0.1))
+                    .cornerRadius(10)
                     TextField("Beschreibung", text: $description)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding()
+                        .background(Color.green.opacity(0.1))
+                        .cornerRadius(10)
                     TextField("Preis", text: $priceString)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding()
+                        .background(Color.green.opacity(0.1))
+                        .cornerRadius(10)
                         .onChange(of: priceString) {_ , newValue in
                             if let newBalance = Double(newValue) {
                                 price = newBalance
@@ -63,7 +74,7 @@ struct AddArticleCard: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 50, height: 50)
-                                Spacer(minLength: 50)
+                            Spacer(minLength: 50)
                         }
                     }
                     .pickerStyle(.wheel)
@@ -84,9 +95,14 @@ struct AddArticleCard: View {
                         
                         showAlert = true
                     }
+                    .foregroundColor(.white)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.green)
+                    .cornerRadius(10)
                 }
             }
-            // .navigationTitle("Artikel hinzufügen")
+            
             .alert("Artikel gespeichert", isPresented: $showAlert) {
                 Button("OK") {
                     isNavigating = true

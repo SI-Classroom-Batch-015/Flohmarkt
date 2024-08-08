@@ -18,34 +18,50 @@ struct LogInView: View {
         NavigationStack {
             VStack {
                 Text("Willkommen")
-                    .font(.system(size: 32, weight: .bold))
-                    .foregroundColor(Color.purple.opacity(0.78))
-                    .padding(.top, 56)
-                    .padding(.horizontal, 16)
+                    .font(.largeTitle)
+                    .foregroundColor(.green)
+                    .padding()
                 
                 Section {
                     TextField("User Name", text: $userName)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding()
+                        .background(Color.green.opacity(0.1))
+                        .cornerRadius(10)
                     SecureField("Passwort", text: $password)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding()
+                        .background(Color.green.opacity(0.1))
+                        .cornerRadius(10)
                 }
                 
-                Button("LogIn") {
+                Button("LogIn")
+                {
                     if uViewModel.logIn(userName: userName, password: password) {
                         isLoggedIn = true
                     }
+                    
                 }
+                .foregroundColor(.white)
                 .padding()
+                .frame(maxWidth: .infinity)
+                .background(Color.green)
+                .cornerRadius(10)
                 NavigationLink(destination: MainMenue().environmentObject(uViewModel), isActive: $isLoggedIn) {
                     EmptyView()
                 }
+                .padding()
                 
                 
                 NavigationLink(destination: SignUpView().environmentObject(uViewModel)) {
                     Text("SignUp")
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.green)
+                        .cornerRadius(10)
                 }
+                
             }
         }
         .navigationBarBackButtonHidden(true)
